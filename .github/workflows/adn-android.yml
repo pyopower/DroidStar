@@ -23,16 +23,12 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Qt 6.8.3 (Android arm64 + host)
-        uses: jurplel/install-qt-action@v4
-        with:
-          version: '6.8.3'
-          host: linux
-          target: android
-          arch: android_arm64_v8a
-          modules: qtmultimedia qtserialport
-          autodesktop: true
-          cache: true
+      - name: Qt 6.8.3 (Android arm64 + escritorio para las herramientas)
+        run: |
+          pip install -q aqtinstall
+          aqt install-qt linux desktop 6.8.3 linux_gcc_64 -O "$RUNNER_TEMP/Qt" -m qtmultimedia qtserialport
+          aqt install-qt linux android 6.8.3 android_arm64_v8a -O "$RUNNER_TEMP/Qt" -m qtmultimedia qtserialport
+          echo "QT_ROOT_DIR=$RUNNER_TEMP/Qt/6.8.3/android_arm64_v8a" >> "$GITHUB_ENV"
 
       - name: NDK y OpenSSL para Android
         run: |
