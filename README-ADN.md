@@ -3,6 +3,21 @@
 Build of [DroidStar](https://github.com/nostar/DroidStar) (GPLv3) for ADN Systems users,
 while the upstream pull request [#26](https://github.com/nostar/DroidStar/pull/26) is pending.
 
+> **Unofficial build.** DroidStar is written by Doug McLain (nostar) and contributors; this is a
+> modified version made for the ADN Systems community. Please report problems with it here,
+> not to the DroidStar author.
+>
+> **Versión no oficial.** DroidStar es obra de Doug McLain (nostar) y colaboradores; esta es una
+> versión modificada para la comunidad de ADN Systems. Los problemas con ella, aquí, no al autor de DroidStar.
+
+## License / Licencia
+
+GNU GPL v3 or later, like DroidStar (see the file headers). Full text in [COPYING](COPYING).
+The source of every release is its `adn-*` tag on the `adn-systems` branch.
+
+GNU GPL v3 o posterior, como DroidStar. Texto completo en [COPYING](COPYING). El código de cada
+versión es su tag `adn-*` de la rama `adn-systems`.
+
 ## What it changes
 
 - **ADN Pass** in Settings (under TGIF Pass): your ADN Systems selfcare password.
