@@ -1,5 +1,6 @@
 package org.dudetronics.droidstar;
 
+import ovh.adan.droidstar.R;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
